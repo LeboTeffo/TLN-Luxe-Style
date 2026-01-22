@@ -1,7 +1,6 @@
 import { useState } from "react";
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
-import Logo from "/public/TLN_Luxe_Logo.png";
+import { Card, CardContent } from "../components/ui/card";
+import { Button } from "../components/ui/button";
 
 export default function Store() {
   const [cart, setCart] = useState([]);
@@ -30,7 +29,7 @@ export default function Store() {
   return (
     <div className="min-h-screen bg-gray-50 p-6">
       <header className="flex justify-between items-center mb-8">
-        <img src={Logo} alt="TLN Luxe Style" className="h-20" />
+        <img src="/TLN_Luxe_Logo.png" alt="TLN Luxe Style" className="h-20" />
         <div className="text-lg font-semibold">Cart: {cart.length} items</div>
       </header>
 
@@ -44,7 +43,7 @@ export default function Store() {
           </div>
         </div>
         <div>
-          <img src={Logo} alt="TLN Luxe Style" className="h-40 md:h-60" />
+          <img src="/TLN_Luxe_Logo.png" alt="TLN Luxe Style" className="h-40 md:h-60" />
         </div>
       </section>
 
