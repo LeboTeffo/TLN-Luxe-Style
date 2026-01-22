@@ -1,11 +1,10 @@
-export function Card({ children, className }) {
+export function Button({ children, className, onClick }) {
   return (
-    <div className={`bg-white rounded-2xl shadow p-4 ${className}`}>
+    <button
+      className={`px-4 py-2 rounded-xl font-semibold ${className}`}
+      onClick={onClick}
+    >
       {children}
-    </div>
+    </button>
   );
-}
-
-export function CardContent({ children, className }) {
-  return <div className={`p-2 ${className}`}>{children}</div>;
 }
