@@ -1,10 +1,11 @@
-export function Button({ children, className, ...props }) {
+export function Card({ children, className }) {
   return (
-    <button
-      className={`px-4 py-2 rounded-xl font-semibold hover:opacity-90 ${className}`}
-      {...props}
-    >
+    <div className={`bg-white rounded-2xl shadow p-4 ${className}`}>
       {children}
-    </button>
+    </div>
   );
+}
+
+export function CardContent({ children, className }) {
+  return <div className={`p-2 ${className}`}>{children}</div>;
 }
